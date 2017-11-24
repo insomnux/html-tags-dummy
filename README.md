@@ -2,7 +2,7 @@
 
 A document with the most commonly used `HTML` tags and their description from MDN to use when testing stylesheets.
 
-The page: [HTML tags dummy document](https://github.com/insomnux/html-tags-dummy)
+The page: [HTML tags dummy document](https://insomnux.github.io/html-tags-dummy/)
 
 ## Changelog
 
