@@ -18,7 +18,7 @@
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
-	display: block;
+  display: block;
 }
 
 /* <!-- END Borderboxing --> */
@@ -62,15 +62,14 @@ section h4 {
 
 /* <!-- END Page-specific styling --> */
 
-
 /* === Headings and text === */
 
-h1 {font-size:2.8rem;}
-h2 {font-size:2.4rem;}
-h3 {font-size:2.2rem;}
-h4 {font-size:2.0rem;}
-h5 {font-size:1.6rem;}
-h6 {font-size:1.4rem;}
+h1 {font-size: 2.8rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 2.2rem;}
+h4 {font-size: 2.0rem;}
+h5 {font-size: 1.6rem;}
+h6 {font-size: 1.4rem;}
 
 /* <!-- END Headings --> */
 
@@ -82,14 +81,14 @@ p {font-size: 16px;}
 
 blockquote, q {
   -webkit-hyphens: none;
-	-moz-hyphens:    none;
-	-ms-hyphens:     none;
-	hyphens:         none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-	content: "";
-	content: none;
+  content: "";
+  content: none;
 }
 
 blockquote {
@@ -98,7 +97,7 @@ blockquote {
   padding-left: 10px;
   margin: 1rem 0 1.5rem 3rem;
   max-width: 85%;
-	quotes: none;  
+  quotes: none;  
 }
 
 /* Pre and code */
@@ -124,13 +123,12 @@ pre {
 }
 
 hr {
-	background-color: rgba(0, 0, 0, 0.4);
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5rem;
   margin-top: 1.5rem;
 }
-
 
 /* <!-- END Block elements --> */
 
@@ -150,8 +148,8 @@ dd {
 }
 
 abbr[title], acronym[title] {
-	border-bottom: 1px dotted #2b2b2b;
-	cursor: help;
+  border-bottom: 1px dotted #2b2b2b;
+  cursor: help;
   text-decoration: none;
 }
 
@@ -189,8 +187,8 @@ address {
   padding-left: 0.5rem;
 }
 abbr[title], acronym[title] {
-	border-bottom: 1px dotted #2b2b2b;
-	cursor: help;
+  border-bottom: 1px dotted #2b2b2b;
+  cursor: help;
   text-decoration: none;
 }
 mark, ins {
@@ -198,7 +196,6 @@ mark, ins {
   padding: 2px 3px;
   text-decoration: none;
 }
-
 
 /* <!-- END Text Markup --> */
 
@@ -216,11 +213,4 @@ input[type="submit"], input[type="reset"], input[type="date"], input[type="color
 }
 
 /* <!-- END Forms --> */
-
-/* ===  === */
-
-
-
-/* <!-- END  --> */
-
 
