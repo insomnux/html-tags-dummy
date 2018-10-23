@@ -179,6 +179,7 @@ thead, tfoot {
 
 b, strong {font-weight: 600;}
 cite, dfn, em, i {font-style: italic;}
+em > em {font-size: 1.1em;}
 address {
   border-left: #ccc solid 1px;
   color: #232323;
