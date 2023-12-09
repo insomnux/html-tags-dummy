@@ -1,6 +1,6 @@
 /* *
  * Basic stylesheet for https://insomnux.github.io/html-tags-dummy/
- * Last updated: 22/11/2018
+ * Last updated: 09/12/2023
  * Source: https://github.com/insomnux/html-tags-dummy
  * */
 
@@ -20,8 +20,6 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
-
-/* <!-- END Borderboxing --> */
 
 /* === Basic === */
 
