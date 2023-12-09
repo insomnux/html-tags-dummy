@@ -39,28 +39,14 @@ body{
   padding: 1em 2em;
 }
 
-/* <!-- END Basic --> */
 
 /* === Page-specific styling === */
 
-.section_title {
-  border-top: #c2c2c2 solid 1px;
+section > h2, section > h3 {
   color: #000;
   margin-top: 1rem;
   padding: 0.5rem 0.2rem 0 0;
 }
-
-section h4 {
-  border-left: #c2c2c2 solid 2px;
-  padding-left: 0.5rem;
-}
-
-#_headings h4 {
-  border: none;
-  padding: inherit;
-}
-
-/* <!-- END Page-specific styling --> */
 
 /* === Headings and text === */
 
@@ -71,7 +57,6 @@ h4 {font-size: 2.0rem;}
 h5 {font-size: 1.6rem;}
 h6 {font-size: 1.4rem;}
 
-/* <!-- END Headings --> */
 
 /* === Block elements === */
 
@@ -92,7 +77,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 blockquote {
-  background-color: #D1D0CE;
+  background-color: #E8E4DC;
   border-left: solid 3px #625D5D;
   padding-left: 10px;
   margin: 1rem 0 1.5rem 3rem;
@@ -109,8 +94,8 @@ code, kbd, samp {
   padding: 2px 4px;
 }
 code, pre {
-  background-color: #edeaea;
-  color: #bd4147;
+  background-color: #dbdbda;
+  color: #28282c;
 }
 pre {
   border: solid 1px #000;
@@ -129,8 +114,6 @@ hr {
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
 }
-
-/* <!-- END Block elements --> */
 
 /* === Lists === */
 
@@ -152,8 +135,6 @@ abbr[title], acronym[title] {
   cursor: help;
   text-decoration: none;
 }
-
-/* <!-- END Lists --> */
 
 /* === Tables === */
 

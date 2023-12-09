@@ -1,548 +1,701 @@
+
 <!DOCTYPE HTML>
 
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HTML tags dummy document</title>
-<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 elements</title>
+  <link rel="stylesheet" type="text/css" media="all" href="style.css" />
 </head>
 
 <body id="top">
 
-<h1> Dummy HTML markup for testing stylesheets </h1>
+  <h1> Most common HTML elements for testing stylesheets </h1>
 
-<nav role="navigation">
-  <ul>
-    <li><a href="#_headings">Headings</a></li>
-    <li><a href="#_block_elements">Block Elements</a></li>
-    <li><a href="#_lists">Lists</a></li>
-    <li><a href="#_tables">Tables</a></li>
-    <li><a href="#_text_markup">Text Markup</a></li>
-    <li><a href="#_forms">Forms</a></li>
-  </ul>
-</nav>
-
-<main role="main">
-
-<section id="_headings">
-
-<header class="section_title"><h2>Headings</h2></header>
-
-<h1>Heading level 1</h1>
-<p>Headings communicate the organization of the content on the page.</p>
-<h2>Heading level 2</h2>
-<p>Web browsers, plug-ins, and assistive technologies can use them to provide in-page navigation.</p>
-<h3>Heading level 3</h3>
-<p>Nest headings by their rank (or level).</p>
-<h4>Heading level 4</h4>
-<p>The most important heading has the rank 1 (&lt;h1&gt;), the least important heading rank 6 (&lt;h6&gt;).</p>
-<h5>Heading level 5</h5>
-<p>Headings with an equal or higher rank start a new section, headings with a lower rank start new subsections that are part of the higher ranked section.</p>
-<h6>Heading level 6</h6>
-<p>Skipping heading ranks can be confusing and should be avoided where possible</p>
-
-<footer><a href="#top">Back to top</a></footer>
-
-</section><!-- /#_headings -->
-
-<section id="_block_elements">
-
-<header class="section_title"><h2>Block elements</h2></header>
-
-<h3>Basic paragraph</h3>
-<p>This text uses the HTML <code>&lt;p&gt;</code> element represents a paragraph of text. The <code>&lt;main&gt;</code> element represents the main content of the <code>&lt;body&gt;</code> of a document, portion of a document, or application. The main content area consists of content that is directly related to, or expands upon the central topic of, a document or the central functionality of an application.</p>
-<p>The <code>&lt;div&gt;</code> is the generic container for flow content and does not inherently represent anything.</p>
-<p>Sectioning elements such as <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code> represent stand-alone content sections, that can contain a  <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> or <code>&lt;aside&gt;</code> element</p>
-
-<h3>Blockquote</h3>
-<blockquote>The HTML <code>&lt;blockquote&gt;</code> Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the <code>&lt;cite&gt;</code> element.</blockquote>
-
-<h3>Code and Pre</h3>
-
-<h4>Code</h4>
-<code>echo "The HTML &lt;code&gt; element represents a fragment of computer code. By default, it is displayed in the browser's default monospace font."</code>
-
-<h4>Pre</h4>
-<pre>The HTML &lt;pre&gt; element represents preformatted text.
-     Text within this element is typically displayed
-                 in a non-proportional ("monospace")
-         font exactly as it is laid out in the file.
-      Whitespace inside this element is displayed as 
-                                              typed.</pre>
-
-<h4>&lt;code&gt; and &lt;pre&gt; elements are frequently used together:</h4>
-<pre><code>#!/bin/bash
-# We use &lt;pre&gt;&lt;code&gt; for block code that must not wrap
-
-echo "Number: " 
-read number
-i=1 
-while [ $i -ne 10 ]; do
-    i=$(expr $i + 1) 
-    table=$(expr $i \* $n) 
-    echo $table 
-done</code></pre>
-
-<h4>Horizontal line</h4>
-
-<hr />
-
-<p>This paragraph is below an horizontal line</p>
-
-
-<footer><a href="#top">Back to top</a></footer>
-
-</section><!-- /#_block_elements -->
-
-<section id="_lists">
-
-<header class="section_title"><h2>Lists</h2></header>
-
-<h3>Unordered lists</h3>
-
-<ul>
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Aliquam eu magna nec</li>
-  <li>Curabitur gravida ante</li>
-  <li>Nam fermentum libero </li>
-  <li>Maecenas scelerisque sem eu sapien</li>
-  <li>Sed sed mauris sit amet</li>
-</ul>
-
-<ul>
-  <li>Unordered list element</li>
-  <li>Nested unordered list
+  <nav>
     <ul>
-      <li>Vivamus</li>
-      <li>Curabitur</li>
-      <li>Integer</li>
-    </ul>
-  </li>
-  <li>Lorem ipsum</li>
-  <li>Another nested list
-    <ul>
-      <li>Lorem ipsum dolor sit amet</li>
-      <li>Nested inside the nested
+      <li><a href="#text">Text Elements</a>
         <ul>
-          <li>Elephant</li>
-          <li>Tiger</li>
-          <li>Flamingo</li>
-          <li>Zebra</li>
+          <li><a href="#headings">Headings</a></li>
+          <li><a href="#paragraphs">Paragraphs</a></li>
         </ul>
-      </li><!-- end nested nested -->
-      <li>Done nesting for now</li>
+      </li>
+      <li><a href="#lists">Lists</a>
+        <ul>
+          <li><a href="#ul">Unordered lists</a></li>
+          <li><a href="#ol">Ordered lists</a></li>
+          <li><a href="#description">Description lists</a></li>
+          <li><a href="#definition">Definition</a></li>
+        </ul>
+      </li>
+      <li><a href="#block_elements">Block Level Elements</a>
+        <ul>
+          <li><a href="#blockquote">Blockquote</a></li>
+          <li><a href="#codepre">Code and Pre</a></li>
+          <li><a href="#figure">Figure and Figcaption</a></li>
+          <li><a href="#details">Details / Summary</a></li>
+          <li><a href="#horizontal">Horizontal line</a></li>
+        </ul>
+      </li>
+      <li><a href="#tables">Tables</a>
+        <ul>
+          <li><a href="#table">Table with caption</a></li>
+          <li><a href="#thead">Table with <code>thead</code>, <code>tbody</code> and <code>tfoot</code></a></li>
+          <li><a href="#colgroup">Table with <code>colgroup</code> and <code>col</code></a></li>
+        </ul>
+      </li>
+      <li><a href="#text_markup">Text Markup</a>
+        <ul>
+          <li><a href="#text-rendering">Text rendering elements</a></li>
+          <li><a href="#other">Other semantic elements</a></li>
+        </ul>
+      </li>
+      <li><a href="#forms">Forms</a>
+        <ul>
+          <li><a href="#options">Select between options</a></li>
+          <li><a href="#inputs">Input types</a></li>
+        </ul>
+      </li>
+      <li><a href="#embedded">Embedded content</a>
+        <ul>
+          <li><a href="#images">Image Embed element</a></li>
+          <li><a href="#videos">Video Embed element</a></li>
+          <li><a href="#audios">Embed Audio element</a></li>
+          <li><a href="#iframes">Inline Frame element</a></li>
+        </ul>
+      </li>
     </ul>
-  </li><!-- end nested -->
-  <li>Final list item</li>
-</ul>
+  </nav>
 
-<h3>Ordered lists</h3>
+  <main>
 
-<ol>
-  <li>This list is ordered</li>
-  <li>Second list item</li>
-  <li>Third list item</li>
-</ol>
+    <section id="text">
+      <header><h2> Text Elements </h2></header>
 
-<ol>
-  <li>First let's start another ordered list</li>
-  <li>Second, let's nest a list
-    <ol type="a">
-      <li>First (a) item</li>
-      <li>Second (b) item</li>
-      <li>Third (c) item</li>
-    </ol>
-  </li>
-  <li>Third, moving on</li>
-</ol>
+      <section id="headings">
 
-<ol start="11">
-  <li>This list starts from "11"</li>
-  <li>and continues with "12"</li>
-  <li>...then with "13"...</li>
-  <li>Fourteen, let's reverse the nested list
-    <ol reversed>
-      <li>In HTML5 we can reverse lists</li>
-      <li>and have a countdown</li>
-      <li>... THREE ...</li>
-      <li>... TWO ...</li>
-      <li>... ONE ...</li>
-    </ol>
-  </li>
-  <li>And, (15), we are done here</li>
-</ol>
+        <h3>Headings</h3>
 
-<h3>Description lists</h3>
+        <h1>Heading level 1</h1>
+        <p>Headings communicate the organization of the content on the page.</p>
+        <h2>Heading level 2</h2>
+        <p>Web browsers, plug-ins, and assistive technologies can use them to provide in-page navigation.</p>
+        <h3>Heading level 3</h3>
+        <p>Nest headings by their rank (or level).</p>
+        <h4>Heading level 4</h4>
+        <p>The most important heading has the rank 1 (&lt;h1&gt;), the least important heading rank 6 (&lt;h6&gt;).</p>
+        <h5>Heading level 5</h5>
+        <p>Headings with an equal or higher rank start a new section, headings with a lower rank start new subsections that are part of the higher ranked section.</p>
+        <h6>Heading level 6</h6>
+        <p>Skipping heading ranks can be confusing and should be avoided where possible</p>
+      </section>
 
-<h4>Multiple terms, single description</h4>
-<dl>
-  <dt>Firefox</dt>
-  <dt>Mozilla Firefox</dt>
-  <dt>Fx</dt>
-  <dd>
-    A free, open source, cross-platform,
-    graphical web browser developed by the
-    Mozilla Corporation and hundreds of
-    volunteers.
-  </dd>
+      <section id="paragraph">
+        <h2>Paragraph</h2>
+        <p>The <code>&lt;p&gt;</code> HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare ipsum quis volutpat efficitur. Pellentesque interdum lorem quis massa consectetur congue.</p>
+      </section>
 
-  <!-- Other terms and descriptions -->
-</dl>
+    <a href="#top">Back to top</a>
+    </section><!-- /#text -->
 
-<h4>Terms - description pairs</h4>
-<dl>
-  <dt>Zebra</dt>
-  <dd>A striped animal</dd>
-  <dt>Horse</dt>
-  <dd>An animal that looks like a monochrome zebra</dd>
-  <dt>Cat</dt>
-  <dd>A fluffy animal</dd>
-  <dt>Tiger</dt>
-  <dd>A big-sized cat that wants to eat you</dd>
-  <dt>Bird</dt>
-  <dd>A winged animal that can fly</dd>
-</dl>
+    <section id="lists">
 
-<h3>Definition</h3>
+      <h2>Lists</h2>
 
-<h4>Definition element with a <code>&lt;title&gt;</code> attribute</h4>
+      <section id="ul">
+        <h3>Unordered lists</h3>
 
-<p><dfn title="World-Wide Web">WWW</dfn> definition.</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Aliquam eu magna nec</li>
+          <li>Curabitur gravida ante</li>
+          <li>Nam fermentum libero </li>
+          <li>Maecenas scelerisque sem eu sapien</li>
+          <li>Sed sed mauris sit amet</li>
+        </ul>
 
+        <ul>
+          <li>Unordered list element</li>
+          <li>Nested unordered list
+            <ul>
+              <li>Vivamus</li>
+              <li>Curabitur</li>
+              <li>Integer</li>
+            </ul>
+          </li>
+          <li>Lorem ipsum</li>
+          <li>Another nested list
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Nested inside the nested
+                <ul>
+                  <li>Elephant</li>
+                  <li>Tiger</li>
+                  <li>Flamingo</li>
+                  <li>Zebra</li>
+                </ul>
+              </li><!-- end nested nested -->
+              <li>Done nesting for now</li>
+            </ul>
+          </li><!-- end nested -->
+          <li>Final list item</li>
+        </ul>
 
-<h4>Definition list with an <code>&lt;attr&gt;</code> element</h4>
-<!-- Define "The Internet" -->
-<p><dfn id="def-internet">The Internet</dfn> is a global
-system of interconnected networks that use the Internet
-Protocol Suite (TCP/IP) to serve billions of users
-worldwide.</p>
+      </section>
 
-<dl>
-  <!-- Define "World-Wide Web" and reference
-       definition for "the Internet" -->
-  <dt>
-    <dfn>
-      <abbr title="World-Wide Web">WWW</abbr>
-    </dfn>
-  </dt>
-  <dd>The World-Wide Web (WWW) is a system of
-  interlinked hypertext documents accessed on
-  <a href="#def-internet">the Internet</a>.</dd>
-</dl>
+      <section id=ol">
+        <h3>Ordered lists</h3>
 
-<footer><a href="#top">Back to top</a></footer>
+        <ol>
+          <li>This list is ordered</li>
+          <li>Second list item</li>
+          <li>Third list item</li>
+        </ol>
 
-</section><!-- /#_lists -->
+        <ol>
+          <li>First let's start another ordered list</li>
+          <li>Second, let's nest a list
+            <ol type="a">
+              <li>First (a) item</li>
+              <li>Second (b) item</li>
+              <li>Third (c) item</li>
+            </ol>
+          </li>
+          <li>Third, moving on</li>
+        </ol>
 
-<section id="_tables">
+        <ol start="11">
+          <li>This list starts from "11"</li>
+          <li>and continues with "12"</li>
+          <li>...then with "13"...</li>
+          <li>Fourteen, let's reverse the nested list
+            <ol reversed>
+              <li>In HTML5 we can reverse lists</li>
+              <li>and have a countdown</li>
+              <li>... THREE ...</li>
+              <li>... TWO ...</li>
+              <li>... ONE ...</li>
+            </ol>
+          </li>
+          <li>And, (15), we are done here</li>
+        </ol>
+      </section>
 
-<header class="section_title"><h2>Tables</h2></header>
+      <section id="description">
+        <h3>Description lists</h3>
 
-<h3>My favourite element: Tables</h3>
+        <h4>Multiple terms, single description</h4>
+        <dl>
+          <dt>Firefox</dt>
+          <dt>Mozilla Firefox</dt>
+          <dt>Fx</dt>
+          <dd>
+            A free, open source, cross-platform,
+            graphical web browser developed by the
+            Mozilla Corporation and hundreds of
+            volunteers.
+          </dd>
 
-<p><code>&lt;del&gt;</code><del>Used for layout, positioning items, creating sidebars and navigation</del><code>&lt;/del&gt;</code></p>
-<p>Used to create and handle tabular data</p>
+          <!-- Other terms and descriptions -->
+        </dl>
 
-<h4>Table with caption</h4>
+        <h4>Terms - description pairs</h4>
+        <dl>
+          <dt>Zebra</dt>
+          <dd>A striped animal</dd>
+          <dt>Horse</dt>
+          <dd>An animal that looks like a monochrome zebra</dd>
+          <dt>Cat</dt>
+          <dd>A fluffy animal</dd>
+          <dt>Tiger</dt>
+          <dd>A big-sized cat that wants to eat you</dd>
+          <dt>Bird</dt>
+          <dd>A winged animal that can fly</dd>
+        </dl>
+      </section>
 
-<table>
-  <caption>Distance of Solar System planets from the Sun. Source: <cite>https://phys.org/news/2014-04-planets-sun.html</cite></caption>
-  <tr>
-    <th>Planet</th>
-    <th>Closest</th>
-    <th>Furthest</th>
-    <th>Average</th>
-  </tr>
-  <tr>
-    <th>Mercury</th>
-    <td>46 million km</td>
-    <td>70 million km</td>
-    <td>57 million km</td>
-  </tr>
-  <tr>
-    <th>Venus</th>
-    <td>107 million km</td>
-    <td>109 million km</td>
-    <td>108 million km</td>
-  </tr>
-  <tr>
-    <th>Earth</th>
-    <td>147 million km</td>
-    <td>152 million km</td>
-    <td>150 million km</td>
-  </tr>
-  <tr>
-    <th>Mars</th>
-    <td>205 million km</td>
-    <td>249 million km</td>
-    <td>228 million km</td>
-  </tr>
-  <tr>
-    <th>Jupiter</th>
-    <td>741 million km</td>
-    <td>817 million km</td>
-    <td>779 million km</td>
-  </tr>
-  <tr>
-    <th>Saturn</th>
-    <td>1.35 billion km</td>
-    <td>1.51 billion km</td>
-    <td>1.43 billion km</td>
-  </tr>
-  <tr>
-    <th>Uranus</th>
-    <td>2.75 billion km</td>
-    <td>3.00 billion km</td>
-    <td>2.88 billion km</td>
-  </tr>
-</table>
+      <section id="definition">
+        <h3>Definition</h3>
 
-<h4>The above table with thead, tfoot, and tbody</h4>
-<table>
-  <caption>Distance of Solar System planets from the Sun. Source: <cite>https://phys.org/news/2014-04-planets-sun.html</cite></caption>
-  <thead>
-    <tr>
-      <th>Planet</th>
-      <th>Closest</th>
-      <th>Furthest</th>
-      <th>Average</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Mercury</th>
-      <td>46 million</td>
-      <td>70 million</td>
-      <td>57 million</td>
-    </tr>
-    <tr>
-      <th>Venus</th>
-      <td>107 million</td>
-      <td>109 million</td>
-      <td>108 million</td>
-    </tr>
-    <tr>
-      <th>Earth</th>
-      <td>147 million</td>
-      <td>152 million</td>
-      <td>150 million</td>
-    </tr>
-    <tr>
-      <th>Mars</th>
-      <td>205 million</td>
-      <td>249 million</td>
-      <td>228 million</td>
-    </tr>
-    <tr>
-      <th>Jupiter</th>
-      <td>741 million</td>
-      <td>817 million</td>
-      <td>779 million</td>
-    </tr>
-    <tr>
-      <th>Saturn</th>
-      <td>1.35 billion</td>
-      <td>1.51 billion</td>
-      <td>1.43 billion</td>
-    </tr>
-    <tr>
-      <th>Uranus</th>
-      <td>2.75 billion</td>
-      <td>3.00 billion</td>
-      <td>2.88 billion</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th>&nbsp;</th>
-      <td>km</td>
-      <td>km</td>
-      <td>km</td>
-    </tr>
-  </tfoot>
-</table>
+        <h4>Definition element with a <code>&lt;title&gt;</code> attribute</h4>
 
-<h4>Table with colgroup and col, directly copied from MDN</h4>
-<table>
-  <colgroup>
-    <col style="background-color: #0f0">
-    <col span="2">
-  </colgroup>
-  <tr>
-    <th>Lime</th>
-    <th>Lemon</th>
-    <th>Orange</th>
-  </tr>
-  <tr>
-    <td>Green</td>
-    <td>Yellow</td>
-    <td>Orange</td>
-  </tr>
-</table>
+        <p><dfn title="World-Wide Web">WWW</dfn> definition.</p>
 
 
-<footer><a href="#top">Back to top</a></footer>
+        <h4>Definition list with an <code>&lt;attr&gt;</code> element</h4>
+        <!-- Define "The Internet" -->
+        <p><dfn id="def-internet">The Internet</dfn> is a global
+        system of interconnected networks that use the Internet
+        Protocol Suite (TCP/IP) to serve billions of users
+        worldwide.</p>
 
-</section><!-- /#_tables -->
+        <dl>
+          <!-- Define "World-Wide Web" and reference
+               definition for "the Internet" -->
+          <dt>
+            <dfn>
+              <abbr title="World-Wide Web">WWW</abbr>
+            </dfn>
+          </dt>
+          <dd>The World-Wide Web (WWW) is a system of
+          interlinked hypertext documents accessed on
+          <a href="#def-internet">the Internet</a>.</dd>
+        </dl>
+      </section>
 
-<section id="_text_markup">
+      <a href="#top">Back to top</a>
+    </section><!-- /#_lists -->
+    
+    <section id="block_elements">
+      <h2>Block Level elements</h2>
 
-<header class="section_title"><h2>Text Markup</h2></header>
+      <section id="blockquote">
+        <h3>Blockquote</h3>
+        <blockquote>
+          <p>The <code>&lt;blockquote&gt;</code> HTML element indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation. A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the <code>&lt;cite&gt;</code> element.</p>
+          <footer>MDN web docs, <cite>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote</cite></footer>
+        </blockquote>
+      </section>
 
-<h3>Inline text semantics</h3>
+      <section id="codepre">
+        <h3>Code and Pre</h3>
 
-<h4>Text rendering elements</h4>
-<ul>
-  <li>The <code>&lt;a&gt;</code> element (Anchor Element) creates <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/a">a hyperlink to other web pages</a>, files, locations within the same page, email addresses, or any other URL.</li>
-  <li>The <code>&lt;b&gt;</code> element is a <b>stylistically different text</b>, usually rendered as bold</li>
-  <li>The <code>&lt;strong&gt;</code> element gives text strong importance, and <strong>is typically displayed in bold</strong></li>
-  <li>The <code>&lt;br&gt;</code> element creates <br />a line break in text (carriage-return)</li>
-  <li>The <code>&lt;em&gt;</code> element marks text that has <em>stress emphasis.</em>. It can <em>be nested <em>with each level of nesting <em>indicating a <em>greater degree of emphasis.</em></em></em></em></li>
-  <li>The <code>&lt;i&gt;</code> element is text that differs from the normal text, example for <i>technical terms</i>, <i>fictional character thoughts</i> or <i>foreign language phrases</i></li>
-  <li>The <code>&lt;s&gt;</code> element renders text <s>with a strikethrough</s>. Not appropriate to indicate document edits; for that, use the &lt;del&gt; and &lt;ins&gt; elements.</li>
-  <li>The <code>&lt;del&gt;</code> element represents a range of text that has been deleted from a document. <del>It is usually renderd as strikethrough</del></li>
-  <li>The <code>&lt;ins&gt;</code> element represents a <ins>range of</ins> text that has been added to a document.</li>
-  <li>The <code>&lt;small&gt;</code> element makes the text font size one size smaller. <small>In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text</small></li>
-  <li>The <code>&lt;u&gt;</code> element <u>renders text with an underline</u>. In HTML5, this element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation</li>
-</ul>
+          <h4>Code</h4>
+          <code>echo "The HTML &lt;code&gt; element represents a fragment of computer code. By default, it is displayed in the browser's default monospace font."</code>
 
-<h4>Other semantic elements</h4>
-<ul>
-  <li>The <code>&lt;address&gt;</code> element  supplies contact information for its nearest article or body ancestor<br />
-    <address>Street 123,<br />
-  56789, City,<br />
-  Country</address>
-  </li>
-  <li>The <abbr title="abbreviation">abbr</abbr> element represents an abbreviation. If present, the <code>&lt;title&gt;</code> attribute must contain this full description</li>
-  <li>The <code>&lt;cite&gt;</code> element represents a reference to a creative work. It must include the title of a work or a URL reference. See <cite>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite</cite></li>
-  <li>The <code>&lt;sub&gt;</code> element is displayed lower, and often smaller, than the main span of text.<br /><em>Ex.</em> H<sub>2</sub>O.</li>
-  <li>The <code>&lt;sup&gt;</code> element is displayed higher, and often smaller, than the main span of text.<br /><em>Ex.</em>3<sup>2</sup> = 9.</li>
-  <li>The <code>&lt;kbd&gt;</code> element <kbd>represents user input and produces an inline element displayed in the browser's default monospace font.</kbd></li>
-  <li>The <code>&lt;mark&gt;</code> element represents <mark>highlighted text</mark></li>
-  <li>The <code>&lt;q&gt;</code> element indicates that the enclosed text is a <q>short inline quotation</q>.</li>
-  <li>The <code>&lt;time&gt;</code> element represents either a time on a 24-hour clock. Updated at <time>15:34</time></li>
-  <li>The <code>&lt;var&gt;</code> element represents a variable in a mathematical expression or a programming context.<br /><em>Ex.</em> <var>x</var> = <var>y</var> + 2</li>
-  <li>The <code>&lt;wbr&gt;</code> element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location.<br /><em>Ex.</em> http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages</li>
-</ul>
+          <h4>Pre</h4>
+          <pre>The HTML &lt;pre&gt; element represents preformatted text.
+               Text within this element is typically displayed
+                           in a non-proportional ("monospace")
+                   font exactly as it is laid out in the file.
+                Whitespace inside this element is displayed as 
+                                                        typed.</pre>
 
-<footer><a href="#top">Back to top</a></footer>
+          <h4>&lt;code&gt; and &lt;pre&gt; elements are frequently used together:</h4>
+          <pre><code>#!/bin/bash
+          # We use &lt;pre&gt;&lt;code&gt; for block code that must not wrap
 
-</section><!-- /#_text_markup -->
+          echo "Number: " 
+          read number
+          i=1 
+          while [ $i -ne 10 ]; do
+              i=$(expr $i + 1) 
+              table=$(expr $i \* $n) 
+              echo $table 
+          done</code></pre>
+      </section>
 
-<section id="_forms">
+      <section id="figure">
+        <h3>Figure and Figcaption</h3>
+        <p>The <code>&lt;figure&gt;</code> HTML element represents self-contained content, potentially with an optional caption, which is specified using the <code>&lt;figcaption&gt;</code> element.</p>
 
-<header class="section_title"><h2>Forms</h2></header>
+        <h4>Image</h4>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/African_Bush_Elephant.jpg/220px-African_Bush_Elephant.jpg" alt="African Bush Elephant">
+          <figcaption>African Bush Elephant</figcaption>
+        </figure>
 
-<form>
-  <fieldset>
-    <legend>Select your favourite colour (can only select one)</legend>
-    <input type="radio" name="radio" id="radio_red">
-    <label for="radio_red">Red</label>
-    <input type="radio" name="radio" id="radio_yellow">
-    <label for="radio_yellow">Yellow</label>
-    <input type="radio" name="radio" id="radio_blue">
-    <label for="radio_blue">Blue</label>
-    <input type="radio" name="radio" id="radio_green">
-    <label for="radio_green">Green</label>
-  </fieldset>
-  <fieldset>
-    <legend>Select your favourite food</legend>
-    <input type="checkbox" name="checkbox" id="ckbox_fish">
-    <label for="ckbox_fish">Fish</label>
-    <input type="checkbox" name="checkbox" id="ckbox_chicken">
-    <label for="ckbox_chicken">Chicken</label>
-    <input type="checkbox" name="checkbox" id="ckbox_veggetables">
-    <label for="ckbox_veggetables">Veggetables</label>
-    <input type="checkbox" name="checkbox" id="ckbox_spaghetti">
-    <label for="ckbox_spaghetti">Spaghetti</label>
-  </fieldset>
-  <fieldset>
-    <legend>Choose your t-shirt size</legend>
-    <select>
-      <option value="s">Small</option>
-      <option value="m">Medium</option>
-      <option value="l">Large</option>
-      <option value="xl">Extra Large</option>
-    </select>
-  </fieldset>
-  <fieldset>
-    <legend>Browser</legend>
-    <label>Choose a browser from this list:
-      <input list="browsers" name="myBrowser" /></label>
-    <datalist id="browsers">
-      <option value="Firefox">
-      <option value="Internet Explorer">
-      <option value="Chrome">
-      <option value="Opera">
-    </datalist>
-  </fieldset>
-  <fieldset>
-    <legend>Options</legend>
-    <select>
-      <optgroup label="Group 1">
-        <option>Option 1.1</option>
-      </optgroup> 
-      <optgroup label="Group 2">
-        <option>Option 2.1</option>
-        <option>Option 2.2</option>
-      </optgroup>
-      <optgroup label="Group 3" disabled>
-        <option>Option 3.1</option>
-        <option>Option 3.2</option>
-        <option>Option 3.3</option>
-      </optgroup>
-    </select>
-  </fieldset>
-  <fieldset>
-    <legend>Instructions</legend>
-    <p>Heat the oven to 180 degrees <meter min="120" max="200" value="180">180 degrees</meter>.</p>
-    <p>...Waiting for the over to heat</p>
-    <progress value="70" max="100">70 %</progress>
-  </fieldset>
-  <fieldset>
-    <legend>Fill your info</legend>
-    <label for="name">Name: </label>
-    <input id="name" type="text" name="name">
-    <label for="surname">Surname: </label>
-    <input id="surname" type="text" name="surname">
-    <label for="telephone">Telephone</label>
-    <input id="telephone" type="tel" name="telephone">
-    <label for="email">Email</label>
-    <input id="email" type="email" name="email">
-    <label for="url">Website URL</label>
-    <input id="url" type="url" name="url">
-    <label for="pass">Password</label>
-    <input id="pass" type="password" name="pass">
-    <label for="package">Package colour</label>
-    <input id="package" type="color" name="package">
-    <label for="apptdate">Shipped at</label>
-    <input id="apptdate" type="date" name="apptdate">
-    <br />
-    <label for="mssg">Message</label><br />
-    <textarea id="mssg" rows="10" cols="80" placeholder="Your message here"></textarea>
-  </fieldset>
+        <h4>Code snippets</h4>
+          <figure>
+            <figcaption>Get browser details using <code>navigator</code>.</figcaption>
+            <pre>
+          function NavigatorExample() {
+            var txt;
+            txt = "Browser CodeName: " + navigator.appCodeName + "; ";
+            txt+= "Browser Name: " + navigator.appName + "; ";
+            txt+= "Browser Version: " + navigator.appVersion  + "; ";
+            txt+= "Cookies Enabled: " + navigator.cookieEnabled  + "; ";
+            txt+= "Platform: " + navigator.platform  + "; ";
+            txt+= "User-agent header: " + navigator.userAgent  + "; ";
+            console.log("NavigatorExample", txt);
+          }
+            </pre>
+          </figure>
+        
+      </section>
 
-  <input type="submit" value="Save">
-  <input type="reset" value="Reset">
-</form>
+      <section id="details">
+        <h3>Details / Summary</h3>
+        <details>
+          <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+          A keyboard.
+        </details>
+      </section>
 
-<footer><a href="#top">Back to top</a></footer>
+      <section id="horizontal">
+        <h3>Horizontal line</h3>
 
-<a href="https://github.com/insomnux/html-tags-dummy" class="github-corner" aria-label="View source on GitHub">
-  <svg width="80" height="80" viewBox="0 0 250 250" style="position: absolute; top: 0px; right: 0px; border: 0px;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" fill="#151513"></path>
-    <path class="octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="#ffffff" style="transform-origin: 130px 106px;"></path>
-    <path class="octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="#ffffff"></path>
-  </svg>
-</a>
+         <hr />
 
-</section><!-- /#_forms -->
+        <p>This paragraph is below an horizontal line</p>
+      </section>
+      
+      <a href="#top">Back to top</a>
 
-</main>
+    </section><!-- /#block_elements -->
 
+    <section id="tables">
+      <h2>Tables</h2>
+      <p>Used to create and handle tabular data</p>
+
+      <section id="table">
+        <h3>Table with caption</h3>
+
+        <table>
+          <caption>Distance of Solar System planets from the Sun. Source: <cite>https://phys.org/news/2014-04-planets-sun.html</cite></caption>
+          <tr>
+            <th>Planet</th>
+            <th>Closest</th>
+            <th>Furthest</th>
+            <th>Average</th>
+          </tr>
+          <tr>
+            <th>Mercury</th>
+            <td>46 million km</td>
+            <td>70 million km</td>
+            <td>57 million km</td>
+          </tr>
+          <tr>
+            <th>Venus</th>
+            <td>107 million km</td>
+            <td>109 million km</td>
+            <td>108 million km</td>
+          </tr>
+          <tr>
+            <th>Earth</th>
+            <td>147 million km</td>
+            <td>152 million km</td>
+            <td>150 million km</td>
+          </tr>
+          <tr>
+            <th>Mars</th>
+            <td>205 million km</td>
+            <td>249 million km</td>
+            <td>228 million km</td>
+          </tr>
+          <tr>
+            <th>Jupiter</th>
+            <td>741 million km</td>
+            <td>817 million km</td>
+            <td>779 million km</td>
+          </tr>
+          <tr>
+            <th>Saturn</th>
+            <td>1.35 billion km</td>
+            <td>1.51 billion km</td>
+            <td>1.43 billion km</td>
+          </tr>
+          <tr>
+            <th>Uranus</th>
+            <td>2.75 billion km</td>
+            <td>3.00 billion km</td>
+            <td>2.88 billion km</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="thead">
+        <h3>The above table with thead, tfoot, and tbody</h3>
+        <table>
+          <caption>Distance of Solar System planets from the Sun. Source: <cite>https://phys.org/news/2014-04-planets-sun.html</cite></caption>
+          <thead>
+            <tr>
+              <th>Planet</th>
+              <th>Closest</th>
+              <th>Furthest</th>
+              <th>Average</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Mercury</th>
+              <td>46 million</td>
+              <td>70 million</td>
+              <td>57 million</td>
+            </tr>
+            <tr>
+              <th>Venus</th>
+              <td>107 million</td>
+              <td>109 million</td>
+              <td>108 million</td>
+            </tr>
+            <tr>
+              <th>Earth</th>
+              <td>147 million</td>
+              <td>152 million</td>
+              <td>150 million</td>
+            </tr>
+            <tr>
+              <th>Mars</th>
+              <td>205 million</td>
+              <td>249 million</td>
+              <td>228 million</td>
+            </tr>
+            <tr>
+              <th>Jupiter</th>
+              <td>741 million</td>
+              <td>817 million</td>
+              <td>779 million</td>
+            </tr>
+            <tr>
+              <th>Saturn</th>
+              <td>1.35 billion</td>
+              <td>1.51 billion</td>
+              <td>1.43 billion</td>
+            </tr>
+            <tr>
+              <th>Uranus</th>
+              <td>2.75 billion</td>
+              <td>3.00 billion</td>
+              <td>2.88 billion</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>&nbsp;</th>
+              <td>km</td>
+              <td>km</td>
+              <td>km</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="colgroup">
+        <h3>Table with colgroup and col</h3>
+        <table>
+          <colgroup>
+            <col style="background-color: #0f0">
+            <col span="2">
+          </colgroup>
+          <tr>
+            <th>Lime</th>
+            <th>Lemon</th>
+            <th>Orange</th>
+          </tr>
+          <tr>
+            <td>Green</td>
+            <td>Yellow</td>
+            <td>Orange</td>
+          </tr>
+        </table>
+      </section>
+
+    <a href="#top">Back to top</a>
+
+    </section><!-- /#tables -->
+
+    <section id="text_markup">
+
+      <h2>Text Markup</h2>
+
+      <section id="text-rendering">
+
+        <h3>Text rendering elements</h3>
+        <ul>
+          <li>The <code>&lt;a&gt;</code> element (Anchor Element) creates <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/a">a hyperlink to other web pages</a>, files, locations within the same page, email addresses, or any other URL.</li>
+          <li>The <code>&lt;b&gt;</code> element is a <b>stylistically different text</b>, usually rendered as bold</li>
+          <li>The <code>&lt;strong&gt;</code> element gives text strong importance, and <strong>is typically displayed in bold</strong></li>
+          <li>The <code>&lt;br&gt;</code> element creates <br />a line break in text (carriage-return)</li>
+          <li>The <code>&lt;em&gt;</code> element marks text that has <em>stress emphasis.</em>. It can <em>be nested <em>with each level of nesting <em>indicating a <em>greater degree of emphasis.</em></em></em></em></li>
+          <li>The <code>&lt;i&gt;</code> element is text that differs from the normal text, example for <i>technical terms</i>, <i>fictional character thoughts</i> or <i>foreign language phrases</i></li>
+          <li>The <code>&lt;s&gt;</code> element renders text <s>with a strikethrough</s>. Not appropriate to indicate document edits; for that, use the &lt;del&gt; and &lt;ins&gt; elements.</li>
+          <li>The <code>&lt;del&gt;</code> element represents a range of text that has been deleted from a document. <del>It is usually renderd as strikethrough</del></li>
+          <li>The <code>&lt;ins&gt;</code> element represents a <ins>range of</ins> text that has been added to a document.</li>
+          <li>The <code>&lt;small&gt;</code> element makes the text font size one size smaller. <small>In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text</small></li>
+          <li>The <code>&lt;u&gt;</code> element <u>renders text with an underline</u>. In HTML5, this element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation</li>
+        </ul>
+      </section>
+
+      <section id="other">
+        <h3>Other semantic elements</h3>
+        <ul>
+          <li>The <code>&lt;address&gt;</code> element  supplies contact information for its nearest article or body ancestor:<br />
+          <address>Street 123,<br />
+          56789, City,<br />
+          Country</address>
+          </li>
+          <li>The <abbr title="abbreviation">abbr</abbr> element represents an abbreviation. If present, the <code>&lt;title&gt;</code> attribute must contain this full description:</li>
+          <li>The <code>&lt;cite&gt;</code> element represents a reference to a creative work. It must include the title of a work or a URL reference. See <cite>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite</cite></li>
+          <li>The <code>&lt;sub&gt;</code> element is displayed lower, and often smaller, than the main span of text:<br />H<sub>2</sub>O.</li>
+          <li>The <code>&lt;sup&gt;</code> element is displayed higher, and often smaller, than the main span of text:<br />3<sup>2</sup> = 9.</li>
+          <li>The <code>&lt;kbd&gt;</code> element <kbd>represents user input and produces an inline element displayed in the browser's default monospace font.</kbd></li>
+          <li>The <code>&lt;mark&gt;</code> element represents <mark>highlighted text</mark></li>
+          <li>The <code>&lt;q&gt;</code> element indicates that the enclosed text is a <q>short inline quotation</q>.</li>
+          <li>The <code>&lt;time&gt;</code> element represents either a time on a 24-hour clock. Updated at <time>15:34</time></li>
+          <li>The <code>&lt;var&gt;</code> element represents a variable in a mathematical expression or a programming context:<br /><var>x</var> = <var>y</var> + 2</li>
+          <li>The <code>&lt;meter&gt;</code> element represents either a scalar value within a known range or a fractional value:<br /><meter min="120" max="200" value="180">180 degrees</meter>.</li>
+          <li>The <code>&lt;progress&gt;</code> element displays a progress bar:<br /><progress value="70" max="100">70 %</progress></li>
+          <li>The <code>&lt;wbr&gt;</code> element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location:<br />http://this<wbr />.is<wbr />.a<wbr />.really<wbr />.long<wbr />.example<wbr />.com/With<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages<wbr />/deeper<wbr />/level<wbr />/pages</li>
+        </ul>
+      </section>
+
+      <a href="#top">Back to top</a>
+
+    </section><!-- /#text_markup -->
+
+    <section id="forms">
+
+    <header class="section_title"><h2>Forms</h2></header>
+
+    <form>
+      <fieldset id="options">
+        <legend>Select your favourite colour (can only select one)</legend>
+        <input type="radio" name="radio" id="radio_red">
+        <label for="radio_red">Red</label>
+        <input type="radio" name="radio" id="radio_yellow">
+        <label for="radio_yellow">Yellow</label>
+        <input type="radio" name="radio" id="radio_blue">
+        <label for="radio_blue">Blue</label>
+        <input type="radio" name="radio" id="radio_green">
+        <label for="radio_green">Green</label>
+      </fieldset>
+      <fieldset>
+        <legend>Select your favourite food</legend>
+        <input type="checkbox" name="checkbox" id="ckbox_fish">
+        <label for="ckbox_fish">Fish</label>
+        <input type="checkbox" name="checkbox" id="ckbox_chicken">
+        <label for="ckbox_chicken">Chicken</label>
+        <input type="checkbox" name="checkbox" id="ckbox_veggetables">
+        <label for="ckbox_veggetables">Veggetables</label>
+        <input type="checkbox" name="checkbox" id="ckbox_spaghetti">
+        <label for="ckbox_spaghetti">Spaghetti</label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose your t-shirt size</legend>
+        <select>
+          <option value="s">Small</option>
+          <option value="m">Medium</option>
+          <option value="l">Large</option>
+          <option value="xl">Extra Large</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Browser</legend>
+        <label>Choose a browser from this list:
+          <input list="browsers" name="myBrowser" /></label>
+        <datalist id="browsers">
+          <option value="Firefox">
+          <option value="Internet Explorer">
+          <option value="Chrome">
+          <option value="Opera">
+        </datalist>
+      </fieldset>
+      <fieldset>
+        <legend>Options</legend>
+        <select>
+          <optgroup label="Group 1">
+            <option>Option 1.1</option>
+          </optgroup> 
+          <optgroup label="Group 2">
+            <option>Option 2.1</option>
+            <option>Option 2.2</option>
+          </optgroup>
+          <optgroup label="Group 3" disabled>
+            <option>Option 3.1</option>
+            <option>Option 3.2</option>
+            <option>Option 3.3</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <fieldset id="inputs">
+        <legend>Fill your info</legend>
+        <label for="name">Name: </label>
+        <input id="name" type="text" name="name">
+        <label for="surname">Surname: </label>
+        <input id="surname" type="text" name="surname">
+        <label for="telephone">Telephone</label>
+        <input id="telephone" type="tel" name="telephone">
+        <br />
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email">
+        <label for="url">Website URL</label>
+        <input id="url" type="url" name="url">
+        <label for="pass">Password</label>
+        <input id="pass" type="password" name="pass">
+        <br />
+        <label for="package">Package colour</label>
+        <input id="package" type="color" name="package">
+        <label for="apptdate">Shipped at</label>
+        <input id="apptdate" type="date" name="apptdate">
+        <br />
+        <label for="mssg">Message</label><br />
+        <textarea id="mssg" rows="10" cols="80" placeholder="Your message here"></textarea>
+      </fieldset>
+
+      <input type="submit" value="Save">
+      <input type="reset" value="Reset">
+      <input type="button" disabled value="disabled">
+    </form>
+
+    <a href="#top">Back to top</a>
+    </section><!-- /#forms -->
+
+    <section id="embedded">
+      <h2>Embedded content</h2>
+
+      <section id="images">
+        <h3>Image Embed element</h3>
+        <figure>
+          <figcaption>Variegation produced by the tulip breaking virus</figcaption>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tulip_with_variegated_colors.jpg/170px-Tulip_with_variegated_colors.jpg" alt="Tulip with variegated colours" />
+        </figure>
+
+        <h4>Multiple images under a single <code>figure</code> element</h4>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Emperor_Penguin_Manchot_empereur.jpg/175px-Emperor_Penguin_Manchot_empereur.jpg" alt="Emperor penguin" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pygoscelis_antarcticus_-Cooper_Bay%2C_South_Georgia%2C_British_Overseas_Territories%2C_UK-8.jpg/175px-Pygoscelis_antarcticus_-Cooper_Bay%2C_South_Georgia%2C_British_Overseas_Territories%2C_UK-8.jpg" alt="Gentoo penguin" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Yellow-eyed_Penguin_MC.jpg/175px-Yellow-eyed_Penguin_MC.jpg" alt="Yellow-eyed penguin" />
+          <figcaption>Pictures of penguins. From left to right: Emperor penguin, Gentoo penguin and Yellow-eyed penguin</figcaption>
+        </figure>
+      </section>
+
+      <section id="videos">
+        <h3>Video Embed element</h3>
+        <figure>
+          <figcaption>Felix the Cat 1919 silent animated short by Pat Sullivan</figcaption>
+          <video controls width="400" height="300">
+            <source src="https://upload.wikimedia.org/wikipedia/commons/5/56/FelixTheCat-1919-FelineFollies_silent.ogv" type="video/ogg" />
+          </video>
+        </figure>
+      </section>
+
+      <section id="audios">
+        <h3>Embed Audio element</h3>
+        <figure>
+          <figcaption>"O Fortuna", Carmina Burana, Carl Orff</figcaption>
+          <audio controls src="https://upload.wikimedia.org/wikipedia/en/4/4e/Carl_Orff-Carmina_Burana-O_Fortuna.ogg">
+        </figure>
+      </section>
+
+      <section id="iframes">
+        <h3>Inline Frame element</h3>
+        <p>The <code>&lt;iframe&gt;</code> HTML element represents a nested browsing context, embedding another HTML page into the current one.</p>
+        <iframe
+          id="inlineFrameExample"
+          title="Inline Frame Example"
+          width="300"
+          height="200"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+        </iframe>
+      </section>
+
+      <a href="#top">Back to top</a>
+    </section><!-- /#embedded -->
+
+  </main>
+  <a href="https://github.com/insomnux/html-tags-dummy" class="github-corner" aria-label="View source on GitHub">
+    <svg width="80" height="80" viewBox="0 0 250 250" style="position: absolute; top: 0px; right: 0px; border: 0px;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" fill="#151513"></path>
+      <path class="octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="#ffffff" style="transform-origin: 130px 106px;"></path>
+      <path class="octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="#ffffff"></path>
+    </svg>
+  </a>
 </body>
 
 </html>
+
