@@ -23,7 +23,7 @@ article, aside, audio, canvas, details, figcaption, figure, footer, header, hgro
   display: block;
 }
 
-img, picture, video, canvas, svg {
+audio, iframe, img, picture, video, canvas, svg {
   height: auto;
   max-width: 100%;
   width: auto;
