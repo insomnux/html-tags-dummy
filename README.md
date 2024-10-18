@@ -6,6 +6,8 @@ The page: [HTML tags dummy document](https://insomnux.github.io/html-tags-dummy/
 
 ## Changelog
 
++ 20241018
+  - Small css fixes
 + 20231209
   - Updated `index.html` to include embedded elements
   - Other small changes in index and style
