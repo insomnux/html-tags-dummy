@@ -6,9 +6,7 @@
 
 /* === Borderboxing === */
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+html {
   box-sizing: border-box;
   /* ~~ if things go/look/feel funky or if you really like red borders
    * uncomment this: ~~ */
@@ -17,8 +15,23 @@
    */
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, img, nav, picture, section, svg, video {
   display: block;
+}
+
+img, picture, video, canvas, svg {
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  max-width: 100%;
 }
 
 /* === Basic === */
