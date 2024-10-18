@@ -8,15 +8,15 @@
 
 html {
   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
   /* ~~ if things go/look/feel funky or if you really like red borders
    * uncomment this: ~~ */
   /*
   border: red 1px solid;
    */
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, img, nav, picture, section, svg, video {
